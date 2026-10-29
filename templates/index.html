@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <meta charset="UTF-8">
     <title>My Personal Portfolio</title>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>IT Project Manager | Python & AI Enthusiast</p>
+    <main>
+        <section id="home" class="hero">
+            <img
+                src="{{ url_for('static', filename='images/profile.jpg') }}"
+                alt="Professional portrait of Luis Espinoza"
+                class="profile-photo"
+            >
+
+
+            <h2 class="professional-title">
+                IT Project Manager | Agile Delivery Leader | Technology Enthusiast
+            </h2>
+
+            <p>
+                Bridging business leadership and technology through
+                Agile delivery, Python, automation, data analytics,
+                and artificial intelligence.
+            </p>
+        </section>
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                I'm an IT Project Management and Agile Delivery professional
+                with over 10 years of experience leading technology initiatives,
+                managing cross-functional teams, and delivering enterprise
+                software solutions.
+            </p>
+
+            <p>
+                Throughout my career, I've worked with international organizations
+                across industries including aviation, telecommunications,
+                technology consulting, and enterprise software.
+            </p>
+
+        </section>
+    </main>
 </body>
 </html>
+
